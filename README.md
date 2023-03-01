@@ -5,8 +5,10 @@ Mục tiêu của bài báo cáo là train mô hình để phân loại hình �
 
 ## 2.	Xử lý dữ liệu
 Lọc dữ liệu:
-		Mô hình chỉ có thể nhận diện được các định dạng ảnh jpeg, jpg, bmp, png nên nhóm viết hàm remove_img để lọc ra các file có định dạng khác và không phù hợp, chỉ chừa lại các ảnh phù hợp để train.
-		Một số ảnh bị lọc ra:
+Mô hình chỉ có thể nhận diện được các định dạng ảnh jpeg, jpg, bmp, png nên nhóm viết hàm remove_img để lọc ra các file có định dạng khác và không phù hợp, chỉ chừa lại các ảnh phù hợp để train.
+
+Một số ảnh bị lọc ra:
+
 <img width="294" alt="image" src="https://user-images.githubusercontent.com/83011808/222169102-7524c26d-54c2-4a9c-b707-1a3e4e0cb258.png">
 
 Sau khi lọc, dataset còn lại 1983 ảnh xe máy và 1998 ảnh xe oto.
@@ -91,11 +93,17 @@ Mô hình thực hiện dự đoán các ảnh được lấy từ internet:
 Qua thử nghiệm sử dụng CNN để phân loại ảnh xe oto và xe máy, chúng ta dễ dàng nhận thấy CNN giúp cho việc nhận dạng, đặc biệt là phân loại ảnh được thực hiện một cách tương đối dễ dàng cùng với độ chính xác rất cao (99% sau 50 lần train, sử dụng dataset có sẵn và 95% sử dụng bộ dataset khác do nhóm tự label) mà không cần phải qua quá nhiều bước xử lý. Tuy nhiên, CNN có một điểm yếu chí mạng là thời gian train mô hình tương đối lâu đồng thời đòi hỏi phải có GPU đủ mạnh để duyệt và rút trích ra những feature đặc biệt của ảnh. Ngoài ra CNN còn phụ thuộc khá nhiều vào lượng dữ liệu đầu vào, nếu lượng dữ liệu đầu vào không đủ lớn và không đủ độ đa dạng thì CNN sẽ không cho ra được các mô hình dự đoán với độ chính xác cao. Hơn nữa, việc hiểu và sử dụng các lớp trong mô hình CNN sao cho đúng, hiệu quả và tiết kiệm thời gian không phải là điều dễ dàng, cần phải hiểu rõ và kết hợp tốt các kỹ thuật nhân ma trận, hàm kích hoạt, pooling và các kỹ thuật khác như đóng gói và xử lý ảnh theo batch để tối ưu hóa thời gian và tài nguyên. Nhóm sử dụng CPU i5 6200U và card đồ họa tích hợp iGPU Intel HD Graphic 530 để train mô hình, tốn 30 phút cho 50 lần train. Thời gian train mô hình phần lớn sẽ phụ thuộc vào sức mạnh của GPU.
 
 ## IV. Nguồn tham khảo
-Convolutional Layer - an overview | ScienceDirect Topics
-CNN | Introduction to Pooling Layer - GeeksforGeeks
-Fully Connected Layer vs Convolutional Layer: Explained | Built In
-Binary Cross Entropy/Log Loss for Binary Classification (analyticsvidhya.com)
-[Deep Learning] Tìm hiểu về mạng tích chập (CNN) (viblo.asia)
-Mạng nơ-ron tích chập (P1) (viblo.asia)
-Mạng nơ-ron tích chập (P2-hết) (viblo.asia)
+[Convolutional Layer - an overview | ScienceDirect Topics]
+
+[CNN | Introduction to Pooling Layer - GeeksforGeeks]
+
+[Fully Connected Layer vs Convolutional Layer: Explained | Built In]
+
+[Binary Cross Entropy/Log Loss for Binary Classification (analyticsvidhya.com)]
+
+[[Deep Learning] Tìm hiểu về mạng tích chập (CNN) (viblo.asia)]
+
+[Mạng nơ-ron tích chập (P1) (viblo.asia)]
+
+[Mạng nơ-ron tích chập (P2-hết) (viblo.asia)]
 
