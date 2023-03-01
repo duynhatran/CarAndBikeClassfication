@@ -2,6 +2,7 @@
 ## 1. Giới thiệu
 CNN (Convolutional Neural Network hay Mạng nơ-ron tích chập) là một trong những mô hình Deep Learning hiện đại, tiên tiến, được ứng dụng rộng rãi trong việc phân loại, nhận dạng hình ảnh là các đối tượng hoặc khuôn mặt. CNN phân loại hình ảnh bằng cách lấy 1 hình ảnh đầu vào, xử lý và phân loại nó theo các nhãn đã được cho trước (VD: xe máy, oto, xe đạp, chó, mèo...).
 Những hình ảnh đầu vào sẽ được lần lượt chuyển qua nhiều lớp tích chập (Convolution Layer) bao gồm các bộ lọc (Kernals), mỗi lớp sử dụng các hàm kích hoạt như ReLU để tạo ra các thông tin trừu tượng hơn cho các lớp tiếp theo, sau đó được đưa tới các lớp được kết nối đầy đủ (Fully Connected layers) để chuyển hình ảnh ban đầu đã qua xử lý thành các phiếu bầu và cuối cùng áp dụng một hàm toán học để phân loại đối tượng có giá trị xác suất từ 0 đến 1.
+https://github.com/duynhatran/CarAndBikeClassfication/issues/1#issue-1605031427
 ## 2. Lớp tích chập (Convolution Layer)
 Là phần chính của CNN, bao gồm nhiều ma trận filters (hoặc kernels). Những ma trận này thường có kích thước nhỏ hơn ma trận ảnh. Tích của mỗi ma trận filter với ma trận ảnh sẽ tạo ra những activation map. Ở những Convolution Layer đầu sẽ trích ra những feature đơn giản của ảnh như đường thẳng, ở những lớp sau sẽ trích ra những feature phức tạp hơn như hình dáng, độ sắc nét, màu sắc, đối tượng cụ thể.
 Hình ảnh minh họa:
