@@ -4,6 +4,7 @@
 Mục tiêu của bài báo cáo là train mô hình để phân loại hình ảnh đưa vào là xe oto hay xe máy. Nhóm sử dụng dataset gồm 2000 ảnh xe oto và 2000 ảnh xe máy khác loại. Do xe oto, xe máy rất đa dạng về dòng, đời sản phẩm khác nhau nên việc train mô hình cần tập trung làm sao để mô hình nhận dạng được sự khác biệt cơ bản của xe oto và xe máy, từ đó đưa ra kết quả chính xác. 
 
 dataset: https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset
+google drive: https://drive.google.com/drive/folders/1nNJ8RukejJWKr-Txk2tMeNyAI90UkBdt?usp=share_link
 
 ## 2.	Xử lý dữ liệu
 Lọc dữ liệu:
