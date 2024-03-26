@@ -1,4 +1,4 @@
-1. Run model on Google Colab 
+1. Run training.ipynb model on Google Colab 
 2. Install necessary linrary in requirement.txt file
 
 
